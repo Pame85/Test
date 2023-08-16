@@ -22,5 +22,5 @@ else answer = secret_num
 
  guesses << answer
  puts "guesses: #{guesses}"
- trials +=1
+ 
 end
