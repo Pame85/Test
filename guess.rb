@@ -1,9 +1,14 @@
+scoring_card = {}
+
 loop do
 
-	"Welcome To The Guessing Game !"
+	puts "Welcome To The Guessing Game !"
+	puts "Enter your name"
+	player_name = gets.chop
+	puts "Hello #{player_name}"
 	secret_num = 88
 	#puts secret_numb
-	puts "Welcome To The Guessing Game !"
+	puts "READY...GO !"
 
 	tries = 1
 	chances = 6
@@ -19,13 +24,6 @@ loop do
 		puts "Number is too Low"
 	else answer = secret_num
 		puts "Answer is correct"
-		puts "Enter Your Name"
-		play = gets.chop.downcase
-
-		play =[]
-		play << answer
- 		puts "play: #{play}"
-
 	break
  	end
 
@@ -33,6 +31,12 @@ loop do
  		puts "guesses: #{guesses}"
  		tries +=1
  	end
+
+	 	puts "No of Tries !"
+  		scoring_card[player_name] =tries
+  		scoring_card.sort_by {|player,score| score}.each do |player, score|
+    	puts "#{player}: #{score}"
+  	end
 
  		puts "Do you want to continue"
  		puts "Y - Yes"
