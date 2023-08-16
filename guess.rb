@@ -19,6 +19,13 @@ loop do
 		puts "Number is too Low"
 	else answer = secret_num
 		puts "Answer is correct"
+		puts "Enter Your Name"
+		play = gets.chop.downcase
+
+		play =[]
+		play << answer
+ 		puts "play: #{play}"
+
 	break
  	end
 
