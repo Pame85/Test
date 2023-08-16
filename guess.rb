@@ -1,11 +1,10 @@
 loop do
 
 	"Welcome To The Guessing Game !"
-	secret_num = rand(1...100)
+	secret_num = 88
 	#puts secret_numb
 	puts "Welcome To The Guessing Game !"
 
-	secret_num = 88
 	tries = 1
 	chances = 6
 	guesses =[]
