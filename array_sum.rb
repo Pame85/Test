@@ -8,4 +8,9 @@ max_val = array.max
 puts "Maximum value: #{max_val}" 
 
 array = array.uniq
-puts "Array Uniq: #{array.uniq}"
+puts "Element Uniq: #{array.uniq}"
+
+reverse_array = array.each_index.map { |i| array[-1-i] }
+puts "Reverses: #{reverse_array}"
+
+
