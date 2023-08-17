@@ -1,9 +1,13 @@
-array = %w(banana pear mango kiwi mango)
+fruit_basket = ["apple", "apple", "pear", "banana", "avocado", "avocado", "pear", "grapefruit", "apple"]
 
-hash1 = array.each_with_object(Hash.new(0)) do |word, count|
-  hash1[word] = count
-  count += 1
-  return hash1
+fruit_counts = Hash.new
+fruit_basket.each do |fruit| 
+   if fruit_counts[fruit]
+      fruit_counts[fruit] += 1
+   else
+      fruit_counts[fruit] = 1
+   end
 end
 
-puts hash1
+puts "Words Frequencies:"
+puts fruit_counts
