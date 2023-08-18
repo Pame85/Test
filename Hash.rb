@@ -9,5 +9,17 @@ fruit_basket.each do |fruit|
    end
 end
 
-puts "Words Frequencies:"
+puts "Fruit Counts"
 puts fruit_counts
+
+
+h1 = { "apple" => S, "pear" => M, "avocado"=> L }   
+h2 = { "apple" => S, "pear" => M, "grape"=> XL} 
+
+puts "Fruit Basket:"
+puts "#{h1.merge(h2)}"
+
+
+
+
+
