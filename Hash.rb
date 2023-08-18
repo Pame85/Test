@@ -1,23 +1,20 @@
-fruit_basket = ["apple", "apple", "pear", "banana", "avocado", "avocado", "pear", "grapefruit", "apple"]
+word_count = ["apple", "apple", "pear", "banana", "avocado", "avocado", "pear", "grapefruit", "apple"]
 
-fruit_counts = Hash.new
-fruit_basket.each do |fruit| 
-   if fruit_counts[fruit]
-      fruit_counts[fruit] += 1
-   else
-      fruit_counts[fruit] = 1
+def word_count (array)
+      word_count = Hash.new
+      fruit_basket.each do |word| 
+      if word_count[word]
+         word_count[word] += 1
+      else
+         word_count[word] = 1
+      end
    end
 end
 
 puts "Fruit Counts"
-puts fruit_counts
+puts word_count
 
 
-h1 = { "apple" => S, "pear" => M, "avocado"=> L }   
-h2 = { "apple" => S, "pear" => M, "grape"=> XL} 
-
-puts "Fruit Basket:"
-puts "#{h1.merge(h2)}"
 
 
 
